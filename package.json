@@ -1,0 +1,23 @@
+{
+  "name": "eindhoven",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:js": "rimraf dist/js",
+    "build:js": "browserify src/js/index.js -o dist/js/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "live-reload": "^1.1.0",
+    "live-server": "^1.2.0",
+    "mocha": "^3.5.0",
+    "rimraf": "^2.6.1",
+    "uglifyjs": "^2.4.11",
+    "watchify": "^3.9.0"
+  }
+}
