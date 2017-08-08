@@ -12,7 +12,8 @@
     "watch:js": "watchify  src/js/index.js -o build/js/bundle.js -t [ babelify --presets [ es2015 ] ]",
     "watch:html": "watch 'npm run build:html' src -p /js/",
     "watch": "npm run watch:js & npm run watch:html",
-    "serve": "live-server build/ & npm run watch",
+    "serve": "npm run build && live-server build/ & npm run watch",
+    "start": "npm run serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
