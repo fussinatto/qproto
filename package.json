@@ -14,6 +14,7 @@
     "watch": "npm run watch:js & npm run watch:html",
     "serve": "npm run build && live-server build/ & npm run watch",
     "start": "npm run serve",
+    "dist": "rimraf dist && npm run build && ncp build dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -27,6 +28,7 @@
     "live-server": "^1.2.0",
     "mkdirp": "^0.5.1",
     "mocha": "^3.5.0",
+    "ncp": "^2.0.0",
     "rimraf": "^2.6.1",
     "uglify-js": "^3.0.27",
     "watch": "^1.0.2",
